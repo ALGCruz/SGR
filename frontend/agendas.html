@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Agenda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/submit-agenda" method="post" class="form">
+            <h2>Cadastro de Agenda</h2>
+
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="hr_inicio">Hora de Início</label>
+            <input type="time" id="hr_inicio" name="hr_inicio" required>
+
+            <label for="hr_fim">Hora de Fim</label>
+            <input type="time" id="hr_fim" name="hr_fim" required>
+
+            <label for="valor">Valor</label>
+            <input type="number" id="valor" name="valor" required>
+
+            <label for="status">Status</label>
+            <select id="status" name="status" required>
+                <option value="A">Pagamento Aberto</option>
+                <option value="P">Pagamento Efetuado</option>
+                <option value="D">Dação</option>
+            </select>
+
+            <label for="obs">Observação</label>
+            <textarea id="obs" name="obs" rows="4"></textarea>
+
+            <button type="submit">Cadastrar Agenda</button>
+        </form>
+    </div>
+</body>
+</html>

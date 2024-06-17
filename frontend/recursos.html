@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Recursos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/submit-recurso" method="post" class="form">
+            <h2>Cadastro de Recurso</h2>
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="tipo">Tipo</label>
+            <select id="tipo" name="tipo" required>
+                <option value="P">Produto</option>
+                <option value="E">Equipamento</option>
+                <option value="L">Licença</option>
+            </select>
+
+            <label for="calendario">Calendário</label>
+            <select id="calendario" name="calendario" required>
+                <option value="1">Padrão</option>
+                <option value="2">30 Mins</option>
+                <option value="3">Hora</option>
+            </select>
+
+            <label for="valor">Valor</label>
+            <input type="number" id="valor" name="valor" required>
+
+            <label for="custo">Custo</label>
+            <input type="number" id="custo" name="custo" required>
+
+            <label for="ativo">Ativo</label>
+            <select id="ativo" name="ativo" required>
+                <option value="S">Sim</option>
+                <option value="N">Não</option>
+            </select>
+
+            <button type="submit">Cadastrar Recurso</button>
+        </form>
+    </div>
+</body>
+</html>
